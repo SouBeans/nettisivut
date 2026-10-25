@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tapahtumat, pelitunnit, turnaukset ja yhteisöpelit Tikkurilan lautapelikaupassa."
+    />
+    <meta name="theme-color" content="#090d0b" />
+    <title>Tapahtumat | Tikkurilan Lautapeli</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Hyppää sisältöön</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="nettisivut.html" class="brand" aria-label="Tikkurilan Lautapeli etusivulle">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>Tikkurilan Lautapeli</span>
+        </a>
+
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko">
+          Valikko
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Päävalikko">
+          <a href="nettisivut.html">Etusivu</a>
+          <a href="valikoima.html">Valikoima</a>
+          <a href="tapahtumat.html">Tapahtumat</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          <span class="eyebrow">Yhteisö & tapahtumat</span>
+          <h1>Pelitapahtumat, turnaukset ja yhteinen pelaaminen.</h1>
+          <p class="subhead">
+            Yhdistämme pelaajat, oppijat ja uudet ystävät koko vuoden ajan. Tapahtumat ovat huolellisesti rakennettuja, rentoja ja hyvin siedettyjä – niin aloittelijalle kuin kokeneellekin.
+          </p>
+
+          <div class="location-layout">
+            <div class="info-stack" aria-label="Tapahtumaohjelma">
+              <div class="info-item">
+                <div class="icon" aria-hidden="true">🎲</div>
+                <div>
+                  <strong>Pelitunnit tiistaisin</strong>
+                  <span>Yhteisöllinen pelaaminen aloittelijoille ja kokeneille.</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon" aria-hidden="true">🏆</div>
+                <div>
+                  <strong>Turnaukset viikoittain</strong>
+                  <span>Seuraa kilpailua ja testaa taitojasi turvallisessa tunnelmassa.</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon" aria-hidden="true">🌿</div>
+                <div>
+                  <strong>Uudet lanseeraukset</strong>
+                  <span>Ensimmäiset maistiaiset uusista julkaisuista ja yhteisötapaamisia.</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon" aria-hidden="true">🧩</div>
+                <div>
+                  <strong>Perhepelit lauantaisin</strong>
+                  <span>Rento ilta koko perheelle – leppoisa tunnelma ja helppo osallistuminen.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-box" aria-label="Tapahtumapaikka">
+              <div class="map-road" aria-hidden="true"></div>
+              <div class="pin" aria-hidden="true"></div>
+              <div class="map-label">
+                <strong>Tikkurila</strong><br />
+                <span>Kohtaamiset ja pelitunnelma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <span class="eyebrow">Seuraa tapahtumia</span>
+              <h2>Haluatko tulla pelaamaan kanssamme?</h2>
+              <p>
+                Tapahtumiin mahtuu kaikki, jotka haluavat avoimen, lämpimän ja innostavan pelaamishetken. Kysy lisää ja varaa paikkasi.
+              </p>
+              <a class="button" href="nettisivut.html#ota-yhteytta">Ota yhteyttä</a>
+            </div>
+
+            <div class="form-box">
+              <h3>Seuraavan illan ohjelma</h3>
+              <ul class="check-list" aria-label="Seuraava ohjelma">
+                <li>Tiistai 18:00 – Pelitunnit & tutustumishetki</li>
+                <li>Torstai 19:00 – Turnaus</li>
+                <li>Lauantai 12:00 – Perhepelit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-compact">
+        <div class="container">
+          <div class="table-heading">
+            <span class="eyebrow">Asiakasetu</span>
+            <h2>Edut eri asiakasryhmille</h2>
+          </div>
+
+          <div class="inventory-table-wrap">
+            <table class="inventory-table" aria-label="Kanta-asiakkaan, VIP-asiakkaan ja tavallisen asiakkaan edut">
+              <thead>
+                <tr>
+                  <th scope="col">Asiakasryhmä</th>
+                  <th scope="col">Edut</th>
+                  <th scope="col">Miksi kannattaa?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tavallinen asiakas</td>
+                  <td>Pääsy kaikkiin tapahtumiin, ilmainen ensikertaan tutustuminen, perhepelien iltasuunnitelmat ja ystävällinen neuvonta</td>
+                  <td>Helppo aloitus ilman sitoutumista ja aina uusia pelaamiskokemuksia.</td>
+                </tr>
+                <tr>
+                  <td>Kanta-asiakas</td>
+                  <td>Alennus 10 % tapahtumamaksuista, etuoikeusvaraussysteemi, kutsut erikoispeleihin ja ilmoittautumiset etuajassa</td>
+                  <td>Parhaat säästöt sekä vahva yhteys kaupan tapahtumiin ja yhteisöön.</td>
+                </tr>
+                <tr class="vip-row">
+                  <td>VIP-asiakas</td>
+                  <td>Alennus 15 %, varaus etusijalla, turnauspaikkojen prioriteetti, lahjakortti ja oma pelitunnin kutsu</td>
+                  <td>Ylivoimainen palvelu ja erikoisasema aktiivisille pelaajille.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Tikkurilan Lautapeli</strong><br />
+          Pelaa, näe ja löydä seuraava suosikkisi.
+        </div>
+        <div>
+          <strong>Osoite</strong><br />
+          Tikkurilantie 12, 01350 Vantaa
+        </div>
+        <div class="footer-links" aria-label="Sivuston linkit">
+          <a href="nettisivut.html">Etusivu</a>
+          <a href="valikoima.html">Valikoima</a>
+          <a href="tapahtumat.html">Tapahtumat</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
