@@ -31,8 +31,8 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background:
-    radial-gradient(circle at 15% 20%, rgba(208, 125, 70, 0.18), transparent 16%),
-    linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 45%, #0d120f 100%);
+    linear-gradient(rgba(9, 13, 11, 0.72), rgba(9, 13, 11, 0.84)),
+    url("horizon.jpg") center/cover no-repeat fixed;
   color: var(--text);
   line-height: 1.6;
 }
@@ -41,12 +41,14 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px),
+    radial-gradient(circle at 15% 20%, rgba(208, 125, 70, 0.18), transparent 16%);
+  background-size: 28px 28px, 28px 28px, 100% 100%;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 a {
@@ -148,7 +150,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(12, 18, 15, 0.86);
+    background: rgba(12, 18, 15, 0.86);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -326,8 +328,8 @@ button[type="submit"]:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent 45%);
-  opacity: 0.7;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent 45%);
+    opacity: 0.7;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -338,23 +340,6 @@ button[type="submit"]:focus-visible {
     linear-gradient(145deg, rgba(59, 70, 58, 0.96), rgba(21, 28, 23, 0.98));
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 30px 50px rgba(0,0,0,0.28);
-}
-
-.board-illustration {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-}
-
-.board-illustration svg {
-  width: min(92%, 430px);
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 2;
-  filter: drop-shadow(0 25px 26px rgba(0, 0, 0, 0.3));
 }
 
 .board-illustration::before,
@@ -380,9 +365,9 @@ button[type="submit"]:focus-visible {
   background: rgba(20, 33, 29, 0.85);
   border: 1px solid var(--line);
   border-radius: 1rem;
+
   right: 1.5rem;
   padding: 1rem 1.2rem;
-  z-index: 3;
 }
 
 .floating-card.bottom {
@@ -492,25 +477,6 @@ button[type="submit"]:focus-visible {
   color: var(--muted);
 }
 
-.page-hero-visual {
-  margin: 1.5rem 0 2rem;
-  border-radius: 1.4rem;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: linear-gradient(135deg, rgba(32, 52, 41, 0.9), rgba(9, 13, 11, 0.95));
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2);
-}
-
-.page-hero-visual svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.page-hero-visual--compact {
-  margin-top: 2rem;
-}
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -609,18 +575,6 @@ button[type="submit"]:focus-visible {
     linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
     radial-gradient(circle at center, rgba(216, 177, 93, 0.7), rgba(121, 155, 107, 0.25) 52%, transparent 0);
   background-size: 18px 18px, 18px 18px, 100% 100%;
-  z-index: 1;
-}
-
-.product-art::after {
-  content: attr(data-icon);
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-size: clamp(2.6rem, 3vw, 4rem);
-  z-index: 2;
-  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.28));
 }
 
 .product-meta {
