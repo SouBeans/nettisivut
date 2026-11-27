@@ -846,7 +846,7 @@ textarea {
 
 @media (max-width: 680px) {
   body {
-    background-position: top 20%;
+    background-position: top center;
     background-size: 180% auto;
   }
 
